@@ -93,7 +93,7 @@ export default function MapWrapper() {
   useEffect(() => {
     const fetchRadarData = async () => {
       setIsLoading(true);
-      const API_URL = '/api/radar'; // เปลี่ยนเป็น URL API จริงของคุณ
+      const API_URL = '/api/radar';
       try {
         const response = await fetch(API_URL);
         const result = await response.json();
